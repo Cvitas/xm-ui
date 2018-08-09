@@ -2,7 +2,7 @@
   "name": "xm-ui",
   "version": "1.0.0",
   "description": "vue plugin ui",
-  "main": "src/index.js",
+  "main": "src/index.common.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,7 +28,10 @@
     "file-loader": "^0.9.0",
     "url-loader": "^0.5.7",
     "json-loader": "^0.5.4",
+    "style-loader": "^0.19.0",
     "css-loader": "^0.28.4",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
     "vue-loader": "^13.0.4",
     "vue-template-compiler": "^2.4.2",
     "webpack": "^3.1.0",

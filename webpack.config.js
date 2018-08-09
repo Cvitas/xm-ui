@@ -7,7 +7,7 @@ module.exports = {
         index: ["./src/index.js"]
     },
     output: {
-        path: path.resolve(__dirname, "src"),
+        path: path.resolve(__dirname, "dist"),
         filename: "[name].commom.js",
         libraryTarget: "umd"
     },

@@ -1,0 +1,86 @@
+.xm-message {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  transition: opacity .3s, transform .4s;
+  overflow: hidden;
+  &.success{
+    background: rgba(22,151,80,1);
+  }
+  &.warning{
+    background: rgba(247,186,44,1);
+  }
+  &.info{
+    background: rgba(80,190,255,1);
+  }
+  &.error{
+    background: rgba(255,73,74,1);
+  }
+  .xm-icon-circle-check {
+    color: #13ce66;
+  }
+  .xm-icon-circle-cross {
+    color: #ff4949;
+  }
+  .xm-icon-information {
+    color: #50bfff;
+  }
+  .xm-icon-warning {
+    color: #f7ba2a;
+  }
+  .xm-message__group {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    p {
+      font-size: 14px;
+      margin: 0 34px 0 0;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    &.is-with-icon {
+      margin-left: 0;
+    }
+  }
+  .xm-step__head, .xm-steps.is-horizontal.is-center {
+    text-align: center;
+  }
+  .xm-message__img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .xm-message__icon {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  .xm-message__closeBtn {
+    top: 3px;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    color: #bfcbd9;
+    font-size: 14px;
+  }
+
+  .xm-message__closeBtn:hover {
+    color: #97a8be;
+  }
+}
+.xm-message-fade-enter, .xm-message-fade-leave-active {
+  opacity: 0;
+  -ms-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+}

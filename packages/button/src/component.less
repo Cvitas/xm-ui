@@ -1,0 +1,36 @@
+.xm-button{
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #E5E5E5;
+  color: #1f2d3d;
+  margin: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Microsoft yahei", "Arial";
+  &.xm-button--default{
+    width: 115px;
+    height: 40px;
+    &:active{
+      background: #EEEEEE;
+    }
+  }
+  &.xm-button--confirm{
+    width: 115px;
+    height: 40px;
+    background: #0097FF;
+    color:#FFFFFF;
+    &:active{
+      background: #1269FF;
+    }
+    &.alert-confirm{
+      width: 250px;
+      height: 40px;
+    }
+  }
+  & + .xm-button{
+    margin-left: 10px
+  }
+}

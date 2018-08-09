@@ -31,3 +31,4 @@ module.exports = {
   Button,
   Message
 };
+module.exports.default = module.exports;
